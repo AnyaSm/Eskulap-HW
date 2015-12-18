@@ -39,8 +39,19 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /*------------WELCOME STYLES---------- */
 /*------------HEADER STYLES----------- */
 .welcome {
+  overflow: hidden;
+  position: relative;
   padding: 150px 0;
   background: #367efe;
+}
+.welcome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1689px;
+  height: 872px;
+  background: url("../../images/welcome-bg.png") no-repeat;
 }
 .welcome .navbar-inverse {
   background: transparent;
@@ -52,13 +63,24 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 }
 .welcome .navbar-inverse .header .navbar-toggle {
   display: block;
-  border: none;
+  border: 1px solid transparent;
 }
-.welcome .navbar-inverse .header .navbar-toggle:hover {
+.welcome .navbar-inverse .header .navbar-toggle:hover, .welcome .navbar-inverse .header .navbar-toggle:focus {
   background: none;
+  border: 1px solid #fff;
 }
 .welcome h1 {
   text-align: center;
+}
+.welcome .arrow::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  margin-right: -9px;
+  width: 19px;
+  height: 32px;
+  background: url("../../images/arrow-down.png") no-repeat;
 }
 
 /*---------END HEADER STYLES---------- */
@@ -134,7 +156,141 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 }
 
 /*---------END ABOUT-ME STYLES-------- */
+/*------------EXPERT STYLES----------- */
+.expert {
+  padding: 80px 0 20px 0;
+  background: #f1f8ff;
+}
+.expert .expert-list {
+  text-align: center;
+}
+.expert .expert-list li {
+  margin-bottom: 60px;
+  padding: 0 15px;
+}
+.expert .expert-list li h4 {
+  margin-bottom: 30px;
+  padding-top: 50px;
+  font: 700 23px "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #3677fd;
+}
+.expert .expert-list li p {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #5a5a5a;
+}
+
+.expert-list li .for-border {
+  position: relative;
+  margin: 0 auto;
+  width: 142px;
+  height: 142px;
+  border: 1px solid #5a5a5a;
+  border-radius: 50%;
+}
+.expert-list li .mobile::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -33px;
+  right: 50%;
+  margin-right: -22px;
+  width: 45px;
+  height: 66px;
+  background: url("../../images/mobile-icon.png") no-repeat;
+}
+.expert-list li .web-design::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -29px;
+  right: 50%;
+  margin-right: -36px;
+  width: 72px;
+  height: 58px;
+  background: url("../../images/design-icon.png") no-repeat;
+}
+.expert-list li .development::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -33px;
+  right: 50%;
+  margin-right: -29px;
+  width: 58px;
+  height: 66px;
+  background: url("../../images/development-icon.png") no-repeat;
+}
+.expert-list li .product::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -33px;
+  right: 50%;
+  margin-right: -35px;
+  width: 71px;
+  height: 67px;
+  background: url("../../images/product-icon.png") no-repeat;
+}
+.expert-list li .ux-ui::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -31px;
+  right: 50%;
+  margin-right: -31px;
+  width: 63px;
+  height: 63px;
+  background: url("../../images/ux-icon.png") no-repeat;
+}
+.expert-list li .animations::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -32px;
+  right: 50%;
+  margin-right: -39px;
+  width: 78px;
+  height: 65px;
+  background: url("../../images/animation-icon.png") no-repeat;
+}
+
+/*---------END EXPERT STYLES---------- */
+/*---------LATEST-WORKS STYLES-------- */
+.latest-works {
+  padding: 90px 0;
+}
+.latest-works .works-list li {
+  margin-bottom: 30px;
+}
+.latest-works .works-list li .img-wrap {
+  padding: 30px 15px 0 15px;
+  background: #f4f4f4;
+}
+.latest-works .works-list li .odds {
+  height: 271px;
+  padding-top: 50px;
+}
+
+/*------END LATEST-WORKS STYLE------- */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+
   /*------------WELCOME STYLES---------- */
   .welcome {
     padding: 100px 0;
@@ -160,6 +316,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   }
 
   /*---------END ABOUT-ME STYLES-------- */
+  /*------------EXPERT STYLES----------- */
+  .expert .expert-list li p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   /*------------WELCOME STYLES---------- */
@@ -195,4 +355,31 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   }
 
   /*---------END ABOUT-ME STYLES-------- */
+  /*------------EXPERT STYLES----------- */
+  .expert {
+    padding-top: 50px;
+  }
+  .expert .expert-list li {
+    margin-bottom: 40px;
+  }
+  .expert .expert-list li h4 {
+    margin-bottom: 25px;
+    padding-top: 50px;
+    font-size: 21px;
+  }
+  .expert .expert-list li p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  /*---------END EXPERT STYLES---------- */
+  /*---------LATEST-WORKS STYLES-------- */
+  .latest-works {
+    padding: 50px 0;
+  }
+  .latest-works .works-list li {
+    padding: 0;
+  }
+
+  /*------END LATEST-WORKS STYLE-------- */
 }

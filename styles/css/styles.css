@@ -108,6 +108,32 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 }
 
 /*---------END WELCOME STYLES--------- */
+/*-----------ABOUT-ME STYLES---------- */
+.page-header {
+  margin: 0;
+  text-align: center;
+  border: none;
+}
+.page-header h3 {
+  margin-bottom: 60px;
+  font: 300 50px "Lato", sans-serif;
+  color: #3677fd;
+}
+
+.about-me {
+  padding: 90px 0;
+}
+.about-me p {
+  margin: 0 auto;
+  max-width: 1040px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #5a5a5a;
+}
+
+/*---------END ABOUT-ME STYLES-------- */
 @media (min-width: 768px) and (max-width: 991px) {
   /*------------WELCOME STYLES---------- */
   .welcome {
@@ -122,8 +148,19 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     font-size: 15px;
     line-height: 30px;
   }
+
+  /*---------END WELCOME STYLES--------- */
+  /*-----------ABOUT-ME STYLES---------- */
+  .page-header h3 {
+    margin-bottom: 45px;
+  }
+
+  .about-me {
+    padding: 70px 0;
+  }
+
+  /*---------END ABOUT-ME STYLES-------- */
 }
-/*---------END WELCOME STYLES--------- */
 @media (max-width: 767px) {
   /*------------WELCOME STYLES---------- */
   .welcome {
@@ -143,4 +180,19 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   }
 
   /*---------END WELCOME STYLES--------- */
+  /*-----------ABOUT-ME STYLES---------- */
+  .page-header h3 {
+    margin-bottom: 35px;
+    font: 300 47px "Lato", sans-serif;
+  }
+
+  .about-me {
+    padding: 60px 0;
+  }
+  .about-me p {
+    font-size: 13px;
+    line-height: 27px;
+  }
+
+  /*---------END ABOUT-ME STYLES-------- */
 }

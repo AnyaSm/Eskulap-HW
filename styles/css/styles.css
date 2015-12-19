@@ -64,6 +64,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .welcome .navbar-inverse .header .navbar-toggle {
   display: block;
   border: 1px solid transparent;
+  margin-top: 20px;
 }
 .welcome .navbar-inverse .header .navbar-toggle:hover, .welcome .navbar-inverse .header .navbar-toggle:focus {
   background: none;
@@ -81,6 +82,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   width: 19px;
   height: 32px;
   background: url("../../images/arrow-down.png") no-repeat;
+}
+.welcome .navbar-fixed-top {
+  top: 75px;
+  z-index: 99;
 }
 
 /*---------END HEADER STYLES---------- */
@@ -109,10 +114,13 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   text-transform: uppercase;
   color: #fff;
 }
-.jumbotron .button {
+
+/*---------END WELCOME STYLES--------- */
+/*-----BUTTON, PAGE-HEADER STYLES----- */
+.button {
   text-align: center;
 }
-.jumbotron .button .btn-lg {
+.button .btn-lg {
   padding: 12px 50px;
   font: 700 16px "Lato", sans-serif;
   text-transform: uppercase;
@@ -121,16 +129,14 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   color: #367efe;
   background: #fff;
 }
-.jumbotron .button .btn-lg:hover {
+.button .btn-lg:hover {
   background: transparent;
   color: #fff;
 }
-.jumbotron .hvr-float-shadow:before {
+.button .hvr-float-shadow:before {
   background: radial-gradient(ellipse at center, #ffffff 0%, rgba(0, 0, 0, 0) 80%);
 }
 
-/*---------END WELCOME STYLES--------- */
-/*-----------ABOUT-ME STYLES---------- */
 .page-header {
   margin: 0;
   text-align: center;
@@ -142,6 +148,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   color: #3677fd;
 }
 
+/*--END BUTTON, PAGE-HEADER STYLES---- */
+/*-----------ABOUT-ME STYLES---------- */
 .about-me {
   padding: 90px 0;
 }
@@ -276,6 +284,183 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 }
 
 /*------END LATEST-WORKS STYLE------- */
+/*----------CLIENTS STYLES----------- */
+.clients {
+  padding: 80px 0;
+  background: #f1f8ff;
+}
+.clients li {
+  margin-bottom: 30px;
+}
+
+/*-------END CLIENTS STYLES---------- */
+/*--------COOPERATION STYLES--------- */
+.cooperation {
+  overflow: hidden;
+  position: relative;
+  padding: 80px 0;
+  background: #367efe;
+}
+.cooperation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 1567px;
+  height: 247px;
+  background: url("../../images/cooperation-bg.png") no-repeat;
+}
+.cooperation p {
+  font: 300 50px "Lato", sans-serif;
+  color: #fff;
+}
+.cooperation p span {
+  font-weight: 700;
+}
+
+/*------END COOPERATION STYLES-------- */
+/*----------AGREEMENT STYLES---------- */
+.agreement {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  width: 100%;
+  background: #194277;
+}
+.agreement p {
+  font: 400 14px "Lato", sans-serif;
+  color: #fff;
+}
+.agreement .button .btn-lg {
+  padding: 10px 40px;
+  font: 700 12px "Lato", sans-serif;
+  text-transform: none;
+}
+
+/*-------END AGREEMENT STYLES---------- */
+/*------------MODAL STYLES------------- */
+.media-list {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.media-list li {
+  position: relative;
+  margin-right: 20px;
+}
+.media-list li:last-child {
+  margin-right: 0;
+}
+.media-list li a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #d2d2d2;
+}
+
+.media-list .facebook a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left: -7px;
+  width: 14px;
+  height: 30px;
+  background: url("../../images/facebook-icon.png") no-repeat;
+}
+.media-list .facebook a:hover {
+  background: #3b5998;
+}
+.media-list .twitter a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 50%;
+  margin-left: -15px;
+  width: 31px;
+  height: 24px;
+  background: url("../../images/twitter-icon.png") no-repeat;
+}
+.media-list .twitter a:hover {
+  background: #55acee;
+}
+.media-list .social a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -13px;
+  left: 50%;
+  margin-left: -13px;
+  width: 26px;
+  height: 26px;
+  background: url("../../images/social-icon.png") no-repeat;
+}
+.media-list .social a:hover {
+  background: #cc2127;
+}
+.media-list .be a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 21px;
+  background: url("../../images/be-icon.png") no-repeat;
+}
+.media-list .be a:hover {
+  background: #dd4b39;
+}
+
+.fade {
+  opacity: 1;
+}
+.fade .modal-dialog {
+  width: 1170px;
+  margin: 90px auto;
+}
+.fade .modal-dialog .modal-body .nav-list {
+  position: relative;
+}
+.fade .modal-dialog .modal-body .nav-list li {
+  margin-bottom: 50px;
+}
+.fade .modal-dialog .modal-body .nav-list li a {
+  font: 300 50px "Lato", sans-serif;
+  text-decoration: none;
+  color: #d2d2d2;
+}
+.fade .modal-dialog .modal-body .nav-list li a:hover {
+  color: #367efe;
+}
+.fade .modal-dialog .modal-body .nav-list::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-right: -160px;
+  width: 330px;
+  height: 2px;
+  background: #d2d2d2;
+}
+.fade .modal-dialog .modal-header {
+  border: none;
+}
+.fade .modal-dialog .modal-header .close {
+  padding-right: 15px;
+  font-size: 40px;
+  font-weight: 100;
+  outline: none;
+}
+.fade .modal-dialog .modal-footer {
+  border-top: none;
+}
+
+/*---------END MODAL STYLES----------- */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
@@ -285,6 +470,26 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .container {
     width: 970px;
   }
+
+  /*--------COOPERATION STYLES--------- */
+  .cooperation p {
+    font-size: 43px;
+  }
+  .cooperation .button .btn-lg {
+    padding: 13px 40px;
+  }
+
+  /*------END COOPERATION STYLES-------- */
+  /*------------MODAL STYLES------------ */
+  .fade {
+    opacity: 1;
+  }
+  .fade .modal-dialog {
+    width: 900px;
+    margin: 90px auto;
+  }
+
+  /*---------END MODAL STYLES----------- */
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -320,6 +525,43 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .expert .expert-list li p {
     font-size: 14px;
   }
+
+  /*---------END EXPERT STYLES---------- */
+  /*---------COOPERATION STYLES--------- */
+  .cooperation p {
+    font-size: 32px;
+  }
+  .cooperation .button .btn-lg {
+    padding: 10px 23px;
+    font-size: 13px;
+  }
+
+  /*--------END COOPERATION STYLES-------- */
+  /*------------MODAL STYLES------------ */
+  .media-list li a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .fade .modal-dialog {
+    width: 700px;
+  }
+  .fade .modal-dialog .modal-body .nav-list li {
+    margin-bottom: 30px;
+  }
+  .fade .modal-dialog .modal-body .nav-list li a {
+    font-size: 35px;
+  }
+  .fade .modal-dialog .modal-body .nav-list::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -140px;
+    width: 280px;
+  }
+
+  /*---------END MODAL STYLES----------- */
 }
 @media (max-width: 767px) {
   /*------------WELCOME STYLES---------- */
@@ -382,4 +624,63 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   }
 
   /*------END LATEST-WORKS STYLE-------- */
+  /*--------COOPERATION STYLES--------- */
+  .cooperation {
+    padding: 50px 0;
+  }
+  .cooperation p {
+    margin-bottom: 20px;
+    font-size: 27px;
+  }
+  .cooperation .button .btn-lg {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  /*------END COOPERATION STYLES-------- */
+  /*----------AGREEMENT STYLES---------- */
+  .agreement {
+    padding: 15px 0;
+  }
+  .agreement p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .agreement .button .btn-lg {
+    padding: 5px 30px;
+    font-size: 10px;
+  }
+
+  /*-------END AGREEMENT STYLES---------- */
+  /*------------MODAL STYLES------------ */
+  .media-list {
+    margin-top: 25px;
+  }
+  .media-list li {
+    margin-right: 10px;
+  }
+  .media-list li a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .fade .modal-dialog {
+    width: 300px;
+  }
+  .fade .modal-dialog .modal-body .nav-list li {
+    margin-bottom: 25px;
+  }
+  .fade .modal-dialog .modal-body .nav-list li a {
+    font-size: 35px;
+  }
+  .fade .modal-dialog .modal-body .nav-list::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: -100px;
+    width: 200px;
+  }
+
+  /*---------END MODAL STYLES----------- */
 }
